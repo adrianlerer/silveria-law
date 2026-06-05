@@ -44,7 +44,7 @@ SilverIA Law no deberia poner API keys en el navegador. Una version real debe us
 Opciones recomendadas:
 
 - Demo sin IA: para capacitacion y presentacion institucional, sin costos ni datos sensibles.
-- Backend institucional: el Colegio o institucion configura proveedor, presupuesto, politicas y fuentes permitidas.
+- Backend institucional: el Colegio de Abogados o institucion juridica configura proveedor, presupuesto, politicas y fuentes permitidas.
 - BYOK seguro: cada estudio trae su propia clave, pero se guarda del lado servidor, nunca en `app.js`.
 - Modelos locales: Ollama, llama.cpp u otros modelos open-weight para pruebas privadas o bajo costo.
 - Capa de fuentes: OCR, documentos cargados, normativa, jurisprudencia y plantillas deben estar separados de la generacion.
@@ -92,7 +92,7 @@ vercel deploy --prod
 └── docs/
 ```
 
-## Uso institucional por Colegios
+## Uso institucional por Colegios de Abogados
 
 Ver [docs/colegios-de-abogados.md](docs/colegios-de-abogados.md).
 

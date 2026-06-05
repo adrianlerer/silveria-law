@@ -16,7 +16,7 @@ Una clave incluida en `app.js`, HTML, variables publicas de build o almacenamien
 
 Uso recomendado para:
 
-- presentaciones a Colegios;
+- presentaciones a Colegios de Abogados;
 - talleres introductorios;
 - pruebas de accesibilidad;
 - demostraciones sin datos sensibles.
@@ -32,7 +32,7 @@ Limite: no genera respuestas reales.
 
 ### 2. Backend institucional
 
-El Colegio, universidad o institucion configura un backend propio.
+El Colegio de Abogados, universidad o institucion juridica profesional configura un backend propio.
 
 Ese backend deberia:
 
@@ -45,7 +45,7 @@ Ese backend deberia:
 
 ### 3. BYOK seguro
 
-BYOK significa Bring Your Own Key: cada estudio juridico o institucion usa su propia clave de proveedor.
+BYOK significa Bring Your Own Key: cada estudio juridico o institucion juridica profesional usa su propia clave de proveedor.
 
 Debe implementarse del lado servidor:
 
@@ -98,4 +98,4 @@ PWA accesible
 
 ## Frase honesta de producto
 
-SilverIA Law no vende un modelo. Ofrece una interfaz accesible y verificable que puede conectarse al modelo, fuente o infraestructura que una institucion decida usar.
+SilverIA Law no vende un modelo. Ofrece una interfaz accesible y verificable que puede conectarse al modelo, fuente o infraestructura que una institucion juridica profesional decida usar.

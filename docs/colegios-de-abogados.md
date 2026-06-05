@@ -2,6 +2,8 @@
 
 SilverIA Law puede usarse como base de capacitacion, demostracion institucional o proyecto comunitario para reducir la brecha de adopcion de IA en la profesion juridica.
 
+En este proyecto, "Colegio" significa siempre Colegio de Abogados o institucion profesional juridica. No se refiere a establecimientos escolares ni a educacion de niños.
+
 ## Problema
 
 Muchos abogados senior tienen experiencia juridica profunda, pero no necesariamente comodidad con herramientas de IA. Las interfaces tipo chat vacio exigen saber formular prompts, cargar contexto, interpretar riesgos y distinguir respuesta de fuente.
