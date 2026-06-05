@@ -455,7 +455,9 @@ h1 {
 }
 
 .disclosure-link a,
-.doc-link {
+.doc-link,
+.hero-founder a,
+.founder-section a {
   color: var(--green);
   font-weight: 800;
   text-decoration-thickness: 2px;
