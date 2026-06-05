@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f35" />
+    <meta
+      name="description"
+      content="Instructivo simple de SilverIA Law para entender demo sin IA, API keys, BYOK, modelos locales y conexion institucional."
+    />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Instructivo IA - SilverIA Law</title>
+  </head>
+  <body class="doc-page">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <header class="doc-header">
+      <div class="doc-brand" aria-label="SilverIA Law">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M12 11h18c5 0 9 4 9 9v17H21c-5 0-9-4-9-9V11Z" />
+            <path d="M20 18h12M20 24h10M20 30h7" />
+          </svg>
+        </div>
+        <div>
+          <strong>SilverIA Law</strong>
+          <span>Instructivo para no tecnicos</span>
+        </div>
+      </div>
+      <a class="doc-link" href="./index.html">Volver a la app</a>
+    </header>
+
+    <main id="main" class="doc-main">
+      <section class="doc-hero">
+        <div>
+          <p class="status-line">Antes de usar IA</p>
+          <h1>Como se alimenta SilverIA Law de inteligencia artificial</h1>
+          <p>
+            Esta pagina explica, sin jerga tecnica, que significa conectar una herramienta legal a IA, que es una API key, que es BYOK, cuando convienen modelos locales y que debe saber un Colegio de Abogados antes de ofrecerla.
+          </p>
+        </div>
+        <aside class="doc-summary" aria-label="Resumen corto">
+          <h2>Resumen honesto</h2>
+          <ul>
+            <li>La demo publica no usa IA real.</li>
+            <li>No se deben pegar claves en el navegador.</li>
+            <li>Una version real necesita backend o modelo local.</li>
+            <li>Siempre debe haber revision humana.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>1. Que hace la demo actual</h2>
+        <p>
+          La version publica de SilverIA Law muestra la interfaz, los pasos y la forma en que deberia trabajar una app accesible para abogados senior. Las respuestas y acciones estan simuladas. No procesa documentos reales, no llama a ChatGPT, Claude, Gemini ni otro proveedor, y no envia informacion fuera del navegador.
+        </p>
+      </section>
+
+      <section class="doc-grid" aria-label="Modos de uso">
+        <article class="doc-section mode-card">
+          <h2>2. Modo demo sin IA</h2>
+          <p>Sirve para charlas, talleres y capacitacion inicial.</p>
+          <ul>
+            <li>No requiere cuenta ni clave.</li>
+            <li>No consume creditos.</li>
+            <li>No envia datos sensibles.</li>
+            <li>Permite explicar el flujo sin riesgo.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>3. Modo Colegio o institucion</h2>
+          <p>El Colegio configura una version con backend propio o contratado.</p>
+          <ul>
+            <li>La institucion elige proveedor de IA.</li>
+            <li>Define presupuesto y limites de uso.</li>
+            <li>Decide que fuentes pueden consultarse.</li>
+            <li>Informa politica de privacidad a los matriculados.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>4. Modo BYOK</h2>
+          <p>BYOK significa Bring Your Own Key: cada estudio trae su propia clave.</p>
+          <ul>
+            <li>La clave no se escribe en la pantalla publica.</li>
+            <li>No queda dentro del codigo de la app.</li>
+            <li>Debe guardarse en servidor o entorno seguro.</li>
+            <li>El estudio puede cambiarla o revocarla.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>5. Modelos locales</h2>
+          <p>Un modelo local corre en una computadora o servidor propio.</p>
+          <ul>
+            <li>Puede reducir envio de datos a terceros.</li>
+            <li>Puede ser mas barato para pruebas.</li>
+            <li>Puede ser mas lento o menos preciso.</li>
+            <li>Tambien requiere evaluacion y control humano.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="doc-section">
+        <h2>6. Que es una API key</h2>
+        <p>
+          Una API key es una llave de acceso a un proveedor. Permite que un sistema use un servicio de IA y, muchas veces, genera costos. Por eso debe tratarse como una clave bancaria: no se comparte, no se pega en una pagina publica y no se envia por canales inseguros.
+        </p>
+        <div class="simple-flow">
+          <div><strong>Mal:</strong> poner la clave en el codigo visible del navegador.</div>
+          <div><strong>Bien:</strong> guardar la clave en un backend o panel seguro.</div>
+          <div><strong>Mejor:</strong> sumar limites, auditoria y posibilidad de revocarla.</div>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h2>7. Comparacion simple</h2>
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Opcion</th>
+              <th>Para quien sirve</th>
+              <th>Costo</th>
+              <th>Riesgo principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Demo sin IA</td>
+              <td>Capacitacion y presentacion</td>
+              <td>Cero o minimo</td>
+              <td>Que alguien crea que ya genera resultados reales</td>
+            </tr>
+            <tr>
+              <td>Backend institucional</td>
+              <td>Colegios, universidades, grandes estudios</td>
+              <td>Controlado por presupuesto</td>
+              <td>Politica de datos mal explicada</td>
+            </tr>
+            <tr>
+              <td>BYOK</td>
+              <td>Estudios con proveedor propio</td>
+              <td>Lo paga cada titular de clave</td>
+              <td>Guardar mal la clave</td>
+            </tr>
+            <tr>
+              <td>Modelo local</td>
+              <td>Pruebas privadas u offline</td>
+              <td>Hardware y mantenimiento</td>
+              <td>Calidad insuficiente sin verificacion</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>8. Reglas antes de usar documentos reales</h2>
+        <ol>
+          <li>Explicar si la herramienta usa IA real o solo demo.</li>
+          <li>Informar que proveedor procesa los datos.</li>
+          <li>No cargar expedientes ni datos personales sin base legal.</li>
+          <li>Separar borrador, fuente y revision profesional.</li>
+          <li>Dejar claro que el abogado decide y firma.</li>
+        </ol>
+      </section>
+
+      <section class="doc-section">
+        <h2>9. Camino recomendado para un Colegio</h2>
+        <ol>
+          <li>Empezar con la demo sin IA para alfabetizacion.</li>
+          <li>Probar accesibilidad con matriculados senior.</li>
+          <li>Definir politica de datos y presupuesto.</li>
+          <li>Elegir proveedor o modelo local.</li>
+          <li>Implementar backend con limites y trazabilidad.</li>
+          <li>Evaluar casos reales solo con autorizacion y revision humana.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

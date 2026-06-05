@@ -33,7 +33,25 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 
 Este repositorio contiene un prototipo funcional de interfaz PWA. Hoy funciona como demo estatica con interacciones locales simuladas. No incluye backend, base de datos, modelos de IA ni integraciones con proveedores.
 
+Importante: la demo publica no llama a ningun modelo de IA y no envia documentos a ningun proveedor. Muestra la experiencia de usuario, los flujos accesibles y el contrato de transparencia que deberia tener una version conectada.
+
 La idea es que la comunidad pueda auditar, adaptar y extender el producto sin depender de infraestructura cerrada.
+
+## Como se alimentaria de IA
+
+SilverIA Law no deberia poner API keys en el navegador. Una version real debe usar un backend que proteja credenciales, aplique limites y registre trazabilidad minima.
+
+Opciones recomendadas:
+
+- Demo sin IA: para capacitacion y presentacion institucional, sin costos ni datos sensibles.
+- Backend institucional: el Colegio o institucion configura proveedor, presupuesto, politicas y fuentes permitidas.
+- BYOK seguro: cada estudio trae su propia clave, pero se guarda del lado servidor, nunca en `app.js`.
+- Modelos locales: Ollama, llama.cpp u otros modelos open-weight para pruebas privadas o bajo costo.
+- Capa de fuentes: OCR, documentos cargados, normativa, jurisprudencia y plantillas deben estar separados de la generacion.
+
+Ver [docs/ai-integration.md](docs/ai-integration.md).
+
+La landing incluye una subpagina para usuarios sin experiencia: [guia-ia.html](guia-ia.html).
 
 ## Ejecutar localmente
 

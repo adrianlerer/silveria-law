@@ -15,6 +15,12 @@ SilverIA Law cambia la puerta de entrada:
 - de respuesta opaca a resultado con control de fuentes;
 - de automatizacion total a asistencia con revision humana.
 
+## Transparencia tecnica
+
+La demo publica no llama a modelos de IA y no procesa documentos reales. Esto debe decirse en toda presentacion institucional.
+
+Una version operativa puede conectarse a IA de varias maneras: backend institucional, BYOK seguro o modelos locales. La decision debe tomarse con reglas claras de privacidad, presupuesto, fuentes y responsabilidad profesional.
+
 ## Usos institucionales
 
 - Taller introductorio sobre IA legal segura.
