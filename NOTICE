@@ -1,0 +1,5 @@
+SilverIA Law is an open source community prototype for legal accessibility and AI literacy.
+
+This repository intentionally contains only public, clean-room product code and documentation.
+It does not include private prompts, model routing rules, thresholds, ledgers, client data,
+institutional strategy, or confidential legal datasets.

@@ -1,0 +1,19 @@
+{
+  "name": "silveria-law",
+  "version": "0.1.0",
+  "private": false,
+  "description": "PWA accesible para acercar IA legal a abogados senior.",
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check app.js && node --check service-worker.js && node -e \"JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8')); console.log('manifest ok')\"",
+    "serve": "python3 -m http.server 4173"
+  },
+  "keywords": [
+    "legaltech",
+    "accessibility",
+    "pwa",
+    "law",
+    "argentina",
+    "senior-lawyers"
+  ]
+}

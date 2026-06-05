@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f35" />
+    <meta
+      name="description"
+      content="SilverIA Law, una PWA accesible para abogados senior que quieren usar IA legal con pasos guiados, fuentes y control humano."
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>SilverIA Law</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <div class="app-shell" data-font-size="normal">
+      <aside class="side-nav" aria-label="Secciones principales">
+        <div class="brand" aria-label="SilverIA Law">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M12 11h18c5 0 9 4 9 9v17H21c-5 0-9-4-9-9V11Z" />
+              <path d="M20 18h12M20 24h10M20 30h7" />
+            </svg>
+          </div>
+          <div>
+            <strong>SilverIA Law</strong>
+            <span>Mesa legal guiada</span>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <button class="nav-item is-active" type="button" data-section="inicio" aria-current="page">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5Z" /></svg>
+            </span>
+            <span>Inicio</span>
+          </button>
+          <button class="nav-item" type="button" data-section="leer">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6V3Z" /><path d="M14 3v4h4M9 11h6M9 15h6M9 19h4" /></svg>
+            </span>
+            <span>Leer documento</span>
+          </button>
+          <button class="nav-item" type="button" data-section="dictar">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 14a4 4 0 0 0 4-4V7a4 4 0 0 0-8 0v3a4 4 0 0 0 4 4Z" /><path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8" /></svg>
+            </span>
+            <span>Dictar</span>
+          </button>
+          <button class="nav-item" type="button" data-section="preparar">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20h16M6 16 17.5 4.5l2 2L8 18l-4 1 2-3Z" /></svg>
+            </span>
+            <span>Preparar escrito</span>
+          </button>
+          <button class="nav-item" type="button" data-section="verificar">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 20 7v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7l8-4Z" /><path d="m8.5 12 2.5 2.5 5-5" /></svg>
+            </span>
+            <span>Verificar fuentes</span>
+          </button>
+        </nav>
+      </aside>
+
+      <main id="main" class="main">
+        <header class="topbar">
+          <div>
+            <p class="status-line">Modo guiado activado</p>
+            <h1>SilverIA Law</h1>
+            <p class="intro">
+              Una mesa de trabajo para usar IA legal con calma: pasos visibles, fuentes separadas y decisión profesional siempre humana.
+            </p>
+          </div>
+          <div class="trust-box" aria-label="Estado de seguridad">
+            <span class="trust-dot" aria-hidden="true"></span>
+            <strong>Sin prompts técnicos</strong>
+            <span>Usted elige una tarea; la app ordena el trabajo.</span>
+          </div>
+        </header>
+
+        <section class="workspace" aria-label="Mesa de trabajo">
+          <div class="task-panel">
+            <div class="section-heading">
+              <h2>¿Qué quiere hacer ahora?</h2>
+              <p>Elija una acción. Puede cambiar de camino en cualquier momento.</p>
+            </div>
+
+            <div class="task-grid">
+              <button class="task-card is-selected" type="button" data-task="leer">
+                <span class="task-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6V3Z" /><path d="M9 12h6M9 16h6" /></svg></span>
+                <span>
+                  <strong>Leer un documento</strong>
+                  <small>Resumen, partes, fechas y alertas.</small>
+                </span>
+              </button>
+              <button class="task-card" type="button" data-task="dictar">
+                <span class="task-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 14a4 4 0 0 0 4-4V7a4 4 0 0 0-8 0v3a4 4 0 0 0 4 4Z" /><path d="M5 10a7 7 0 0 0 14 0" /></svg></span>
+                <span>
+                  <strong>Dictar una consulta</strong>
+                  <small>Hable como en el estudio.</small>
+                </span>
+              </button>
+              <button class="task-card" type="button" data-task="preparar">
+                <span class="task-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16 17.5 4.5l2 2L8 18l-4 1 2-3Z" /></svg></span>
+                <span>
+                  <strong>Preparar un escrito</strong>
+                  <small>Formulario breve, borrador editable.</small>
+                </span>
+              </button>
+              <button class="task-card" type="button" data-task="verificar">
+                <span class="task-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 20 7v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7l8-4Z" /><path d="m8.5 12 2.5 2.5 5-5" /></svg></span>
+                <span>
+                  <strong>Verificar fuentes</strong>
+                  <small>Qué está fundado y qué falta.</small>
+                </span>
+              </button>
+            </div>
+
+            <article class="flow-card" aria-live="polite">
+              <div class="flow-header">
+                <div>
+                  <span class="flow-label">Tarea seleccionada</span>
+                  <h2 id="flow-title">Leer un documento</h2>
+                </div>
+                <span id="flow-state" class="state-chip">Primer paso</span>
+              </div>
+
+              <div id="flow-body" class="flow-body"></div>
+            </article>
+          </div>
+
+          <aside class="guide-panel" aria-label="Paso a paso">
+            <div class="section-heading compact">
+              <h2>Paso a paso</h2>
+              <p>Sin jerga técnica. Cada salida queda pendiente de revisión.</p>
+            </div>
+            <ol class="steps" id="steps">
+              <li class="is-current"><span>1</span>Elegir tarea</li>
+              <li><span>2</span>Cargar o dictar información</li>
+              <li><span>3</span>Revisar resultado con fuentes</li>
+              <li><span>4</span>Exportar borrador o guardar</li>
+            </ol>
+            <div class="source-status">
+              <h3>Control profesional</h3>
+              <p>La app muestra borradores y señales. No reemplaza criterio jurídico ni firma profesional.</p>
+              <div class="status-row">
+                <span>Fuentes</span>
+                <strong id="source-status">Pendientes</strong>
+              </div>
+              <div class="status-row">
+                <span>Revisión humana</span>
+                <strong>Obligatoria</strong>
+              </div>
+            </div>
+            <div class="guide-actions">
+              <button class="primary-btn" id="continue-btn" type="button">Continuar</button>
+              <button class="secondary-btn" id="help-btn" type="button">Necesito ayuda</button>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="access-bar" aria-label="Opciones de accesibilidad">
+        <div class="access-group">
+          <span>Tamaño de letra</span>
+          <button type="button" class="icon-btn" id="font-minus" aria-label="Reducir tamaño de letra">A-</button>
+          <button type="button" class="icon-btn" id="font-plus" aria-label="Aumentar tamaño de letra">A+</button>
+        </div>
+        <label class="toggle">
+          <input id="contrast-toggle" type="checkbox" />
+          <span>Contraste alto</span>
+        </label>
+        <button type="button" class="bar-btn" id="speak-btn">Leer en voz alta</button>
+        <button type="button" class="bar-btn" id="save-btn">Guardar</button>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
