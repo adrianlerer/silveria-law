@@ -283,8 +283,8 @@ h1 {
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(230px, 260px) repeat(2, minmax(112px, 126px));
   gap: 12px;
   margin-top: 28px;
   padding-bottom: 18px;
@@ -296,6 +296,19 @@ h1 {
   justify-content: center;
   min-height: 54px;
   text-decoration: none;
+}
+
+.hero-actions .primary-btn {
+  min-width: min(100%, 260px);
+  min-height: 68px;
+  padding-inline: 28px;
+  font-size: 1.18rem;
+  box-shadow: 0 16px 34px rgba(23, 63, 53, 0.22);
+}
+
+.hero-actions .secondary-btn {
+  min-height: 54px;
+  min-width: 116px;
 }
 
 .hero-board {
@@ -1208,6 +1221,16 @@ body.high-contrast .task-card.is-selected {
 
   .link-btn {
     width: 100%;
+  }
+
+  .hero-actions .primary-btn {
+    min-height: 74px;
+    font-size: 1.34rem;
+  }
+
+  .hero-actions .secondary-btn {
+    min-height: 62px;
+    font-size: 1.08rem;
   }
 
   .hero-board {
