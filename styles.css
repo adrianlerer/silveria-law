@@ -904,7 +904,7 @@ body.high-contrast .task-card.is-selected {
   color: var(--muted);
 }
 
-.steps li span {
+.steps li > span:first-child {
   width: 36px;
   height: 36px;
   display: grid;
@@ -916,13 +916,18 @@ body.high-contrast .task-card.is-selected {
   font-weight: 900;
 }
 
+.steps li > span:last-child {
+  min-width: 0;
+  line-height: 1.3;
+}
+
 .steps li.is-current {
   background: var(--surface-2);
   color: var(--ink);
   font-weight: 800;
 }
 
-.steps li.is-current span {
+.steps li.is-current > span:first-child {
   background: var(--green);
   color: white;
   border-color: var(--green);
@@ -979,12 +984,24 @@ body.high-contrast .task-card.is-selected {
 }
 
 .access-group,
-.toggle {
+.toggle,
+.language-select {
   min-height: 48px;
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 800;
+}
+
+.language-select select {
+  min-height: 48px;
+  min-width: 86px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--green);
+  padding: 8px 12px;
+  font-weight: 900;
 }
 
 .toggle input {
@@ -1213,6 +1230,7 @@ body.high-contrast .task-card.is-selected {
 
   .hero-actions {
     display: grid;
+    grid-template-columns: 1fr;
   }
 
   .hero-founder {
