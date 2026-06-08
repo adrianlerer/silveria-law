@@ -83,6 +83,23 @@ La IA no debe inventar derecho. Una version seria deberia consultar fuentes sepa
 
 El resultado final debe mostrar que esta fundado, que falta y que requiere revision profesional.
 
+### 6. Radar BORA
+
+Radar BORA es un ejemplo de integracion donde la IA no debe ser la primera capa.
+
+Flujo recomendado:
+
+1. Capturar el Boletin Oficial de la Republica Argentina una vez por dia.
+2. Guardar metadatos: fecha, seccion, rubro, organismo, titulo y enlace oficial.
+3. Filtrar por reglas de bajo costo segun perfil profesional o institucional.
+4. Enviar a IA solo los items relevantes.
+5. Generar resumen y clasificacion con enlaces oficiales.
+6. Mantener revision profesional obligatoria.
+
+Una version comercial o institucional deberia incluir suscripcion, cupos de uso o BYOK. No se recomienda ofrecer IA ilimitada sin limite tecnico ni economico.
+
+Ver tambien [bora-radar.md](bora-radar.md).
+
 ## Arquitectura minima recomendada
 
 ```text

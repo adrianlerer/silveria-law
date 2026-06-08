@@ -284,7 +284,7 @@ h1 {
 
 .hero-actions {
   display: grid;
-  grid-template-columns: minmax(230px, 260px) repeat(2, minmax(112px, 126px));
+  grid-template-columns: minmax(230px, 260px) repeat(3, minmax(112px, 126px));
   gap: 12px;
   margin-top: 28px;
   padding-bottom: 18px;
@@ -506,7 +506,8 @@ h1 {
 }
 
 .founder-section,
-.movement-section {
+.movement-section,
+.bora-section {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -563,13 +564,15 @@ h1 {
   line-height: 1.45;
 }
 
-.movement-grid {
+.movement-grid,
+.bora-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.movement-grid article {
+.movement-grid article,
+.bora-grid article {
   min-height: 170px;
   border-top: 5px solid var(--green);
   border-radius: 8px;
@@ -577,17 +580,58 @@ h1 {
   padding: 18px;
 }
 
-.movement-grid article:nth-child(2) {
+.movement-grid article:nth-child(2),
+.bora-grid article:nth-child(2) {
   border-top-color: var(--burgundy);
 }
 
-.movement-grid article:nth-child(3) {
+.movement-grid article:nth-child(3),
+.bora-grid article:nth-child(3) {
   border-top-color: var(--blue);
 }
 
 .movement-grid h3 {
   margin-bottom: 8px;
   font-size: 1.12rem;
+}
+
+.bora-section {
+  border-color: rgba(27, 93, 122, 0.35);
+  background:
+    linear-gradient(135deg, rgba(27, 93, 122, 0.08), transparent 42%),
+    var(--surface);
+}
+
+.bora-grid strong,
+.bora-grid span {
+  display: block;
+}
+
+.bora-grid strong {
+  margin-bottom: 8px;
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
+.bora-grid span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.bora-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.doc-callout {
+  border-left: 6px solid var(--blue);
+}
+
+.subscription-table td:first-child {
+  font-weight: 800;
+  color: var(--green);
 }
 
 .task-panel,
@@ -1172,6 +1216,25 @@ body.high-contrast .task-card.is-selected {
   padding: 14px;
 }
 
+.code-block {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #101915;
+  color: #ffffff;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+blockquote {
+  margin: 14px 0 0;
+  border-left: 6px solid var(--gold);
+  background: var(--surface-2);
+  padding: 16px;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
 @media (max-width: 1080px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -1210,7 +1273,8 @@ body.high-contrast .task-card.is-selected {
     min-height: 340px;
   }
 
-  .movement-grid {
+  .movement-grid,
+  .bora-grid {
     grid-template-columns: 1fr;
   }
 

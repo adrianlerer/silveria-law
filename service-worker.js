@@ -1,7 +1,9 @@
-const CACHE_NAME = "silveria-law-v2";
+const CACHE_NAME = "silveria-law-v3";
 const ASSETS = [
   "./",
   "./index.html",
+  "./guia-ia.html",
+  "./radar-bora.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",

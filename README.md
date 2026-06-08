@@ -11,6 +11,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Preparar borradores desde formularios simples.
 - Separar resultado, fuentes y revision humana.
 - Usar una interfaz con tipografia grande, contraste alto y lectura en voz alta.
+- Explorar un modulo Radar BORA para informes diarios del Boletin Oficial argentino.
 
 ## Para quien esta pensado
 
@@ -52,6 +53,22 @@ Opciones recomendadas:
 Ver [docs/ai-integration.md](docs/ai-integration.md).
 
 La landing incluye una subpagina para usuarios sin experiencia: [guia-ia.html](guia-ia.html).
+
+## Radar BORA
+
+El repo incluye una propuesta documentada para `Radar BORA`, un modulo de monitor diario del Boletin Oficial de la Republica Argentina.
+
+La idea no es que la IA "lea todo" sin control. El flujo recomendado es:
+
+- capturar una vez por dia las secciones publicas del BORA;
+- filtrar por reglas baratas antes de llamar IA;
+- usar IA solo para resumen, clasificacion y explicacion clara;
+- entregar enlaces oficiales;
+- exigir revision profesional antes de actuar.
+
+Tambien se documenta el punto economico: para ofrecerlo seriamente conviene suscripcion o BYOK, con limites de uso y presupuesto.
+
+Ver [radar-bora.html](radar-bora.html) y [docs/bora-radar.md](docs/bora-radar.md).
 
 ## Ejecutar localmente
 

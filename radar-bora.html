@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f35" />
+    <meta
+      name="description"
+      content="Instructivo de SilverIA Law para implementar Radar BORA, un monitor del Boletin Oficial argentino con IA segura, API keys protegidas y suscripcion sustentable."
+    />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Radar BORA - SilverIA Law</title>
+  </head>
+  <body class="doc-page">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <header class="doc-header">
+      <div class="doc-brand" aria-label="SilverIA Law">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M12 11h18c5 0 9 4 9 9v17H21c-5 0-9-4-9-9V11Z" />
+            <path d="M20 18h12M20 24h10M20 30h7" />
+          </svg>
+        </div>
+        <div>
+          <strong>SilverIA Law</strong>
+          <span>Radar BORA</span>
+        </div>
+      </div>
+      <a class="doc-link" href="./index.html">Volver a la app</a>
+      <a class="doc-link" href="./guia-ia.html">Guia IA</a>
+      <a class="doc-link" href="https://github.com/adrianlerer/silveria-law" rel="noopener noreferrer">Repositorio GitHub</a>
+    </header>
+
+    <main id="main" class="doc-main">
+      <section class="doc-hero">
+        <div>
+          <p class="status-line">Boletin Oficial argentino</p>
+          <h1>Radar BORA: informe diario con enlaces oficiales y control humano</h1>
+          <p>
+            Radar BORA es una propuesta de modulo para que abogados, estudios y Colegios de Abogados reciban un resumen diario del Boletin Oficial de la Republica Argentina sin revisar manualmente cada seccion.
+          </p>
+        </div>
+        <aside class="doc-summary" aria-label="Resumen corto">
+          <h2>Idea central</h2>
+          <ul>
+            <li>Primero se capturan fuentes publicas.</li>
+            <li>Luego se filtra sin IA cuando sea posible.</li>
+            <li>La IA resume solo lo relevante.</li>
+            <li>La decision juridica queda en manos del profesional.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>1. Estado actual</h2>
+        <p>
+          Esta pagina documenta el diseno del modulo. La PWA publica todavia no ejecuta un monitor real del Boletin Oficial, no llama a modelos de IA y no procesa documentos de usuarios. El objetivo es que cualquier institucion pueda entender como se implementaria sin ocultar costos ni credenciales.
+        </p>
+      </section>
+
+      <section class="doc-grid" aria-label="Flujo del Radar BORA">
+        <article class="doc-section mode-card">
+          <h2>2. Captura diaria</h2>
+          <p>Un proceso programado consulta las secciones del BORA una vez por dia.</p>
+          <ul>
+            <li>Primera Seccion: legislacion y avisos oficiales.</li>
+            <li>Segunda Seccion: sociedades y avisos judiciales.</li>
+            <li>Tercera Seccion: contrataciones.</li>
+            <li>Guarda fecha, seccion, rubro, titulo y enlace oficial.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>3. Filtro barato antes de IA</h2>
+          <p>No conviene que la IA lea todo si primero puede filtrarse por reglas simples.</p>
+          <ul>
+            <li>Organismos: ARCA, BCRA, CNV, IGJ, ministerios.</li>
+            <li>Materias: laboral, fiscal, societario, consumo, datos personales.</li>
+            <li>Jurisdicciones, provincias, municipios o rubros.</li>
+            <li>Palabras clave elegidas por cada usuario o institucion.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>4. IA solo para valor agregado</h2>
+          <p>La IA debe trabajar sobre resultados ya filtrados.</p>
+          <ul>
+            <li>Resumen en lenguaje claro.</li>
+            <li>Clasificacion de impacto probable.</li>
+            <li>Motivo por el cual podria importar.</li>
+            <li>Lista de enlaces oficiales para revisar.</li>
+          </ul>
+        </article>
+
+        <article class="doc-section mode-card">
+          <h2>5. Informe diario</h2>
+          <p>El usuario recibe un informe breve y accionable.</p>
+          <ul>
+            <li>Email diario o panel web.</li>
+            <li>Secciones por materia.</li>
+            <li>Alertas de alta prioridad.</li>
+            <li>Aviso visible: requiere revision profesional.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="doc-section">
+        <h2>6. Costo para quien ofrece el servicio</h2>
+        <p>
+          El costo real depende de cantidad de usuarios, emails e IA usada. La regla economica es simple: capturar el BORA una sola vez por dia, filtrar con reglas baratas y usar IA solo sobre lo que quedo relevante.
+        </p>
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Capa</th>
+              <th>Costo esperado</th>
+              <th>Como controlarlo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Captura BORA</td>
+              <td>Bajo o casi cero</td>
+              <td>Una ejecucion diaria, cache y deduplicacion.</td>
+            </tr>
+            <tr>
+              <td>Hosting</td>
+              <td>Bajo al inicio</td>
+              <td>Funciones programadas con limite y logs.</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>Depende de destinatarios</td>
+              <td>Enviar un resumen diario, no multiples alertas innecesarias.</td>
+            </tr>
+            <tr>
+              <td>IA</td>
+              <td>Variable</td>
+              <td>Modelos chicos, prompts cortos, maximo de items por informe.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section doc-callout">
+        <h2>7. Suscripcion recomendada</h2>
+        <p>
+          Si el modulo se ofrece en serio, debe tener suscripcion o BYOK. No es sustentable prometer IA ilimitada gratis.
+        </p>
+        <table class="doc-table subscription-table">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Uso</th>
+              <th>Limite sano</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Comunidad</td>
+              <td>Resumen general del dia para capacitacion.</td>
+              <td>Sin personalizacion profunda.</td>
+            </tr>
+            <tr>
+              <td>Profesional</td>
+              <td>Un abogado recibe perfiles de interes.</td>
+              <td>Materias y palabras clave limitadas.</td>
+            </tr>
+            <tr>
+              <td>Estudio</td>
+              <td>Varios usuarios y perfiles por practica.</td>
+              <td>Cupo mensual de informes y alertas.</td>
+            </tr>
+            <tr>
+              <td>Colegio de Abogados</td>
+              <td>Plan institucional para matriculados.</td>
+              <td>Presupuesto cerrado, politicas y soporte.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>8. Si usted usa ChatGPT: atencion</h2>
+        <p>
+          Una suscripcion de ChatGPT no es lo mismo que una API key. Para que una aplicacion use modelos de OpenAI necesita una clave de la plataforma de desarrolladores y facturacion API separada.
+        </p>
+        <ol>
+          <li>Entrar a <a href="https://platform.openai.com/api-keys" rel="noopener noreferrer">platform.openai.com/api-keys</a>.</li>
+          <li>Iniciar sesion con su cuenta de OpenAI.</li>
+          <li>Crear una nueva clave secreta para este proyecto.</li>
+          <li>Copiarla una sola vez y guardarla en un lugar seguro.</li>
+          <li>No enviarla por WhatsApp, email, formularios publicos ni capturas de pantalla.</li>
+        </ol>
+      </section>
+
+      <section class="doc-section">
+        <h2>9. Como poner la API key sin exponerla</h2>
+        <p>
+          La clave debe quedar en el servidor o en variables de entorno del proveedor de hosting. Nunca debe quedar en HTML, CSS, JavaScript publico, GitHub, localStorage ni en una captura.
+        </p>
+        <div class="simple-flow">
+          <div><strong>Paso 1:</strong> crear un backend, por ejemplo una API route o funcion serverless.</div>
+          <div><strong>Paso 2:</strong> guardar la clave como variable de entorno llamada <code>OPENAI_API_KEY</code>.</div>
+          <div><strong>Paso 3:</strong> la PWA llama a su backend, no directamente a OpenAI.</div>
+          <div><strong>Paso 4:</strong> el backend aplica limites, registra uso y recien ahi llama al proveedor.</div>
+          <div><strong>Paso 5:</strong> si se sospecha exposicion, revocar la clave y crear una nueva.</div>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h2>10. Ejemplo de arquitectura segura</h2>
+        <pre class="code-block"><code>PWA SilverIA Law
+  -> /api/radar-bora/informe
+    -> autenticar usuario
+    -> verificar cupo de suscripcion
+    -> leer cache del BORA
+    -> filtrar por perfil
+    -> llamar IA con OPENAI_API_KEY del servidor
+    -> devolver informe con enlaces oficiales</code></pre>
+      </section>
+
+      <section class="doc-section">
+        <h2>11. Que debe decir el producto</h2>
+        <p>
+          Texto recomendado para evitar engaños:
+        </p>
+        <blockquote>
+          Radar BORA genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
+        </blockquote>
+      </section>
+
+      <section class="doc-section">
+        <h2>12. Siguiente paso tecnico</h2>
+        <ol>
+          <li>Crear backend separado para el modulo Radar BORA.</li>
+          <li>Agregar cron diario para capturar secciones del BORA.</li>
+          <li>Guardar cache estructurada por fecha, seccion y rubro.</li>
+          <li>Crear perfiles de interes por usuario o institucion.</li>
+          <li>Conectar IA con variable segura y limite mensual.</li>
+          <li>Enviar email o mostrar panel con enlaces oficiales.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
