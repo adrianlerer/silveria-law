@@ -11,7 +11,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Preparar borradores desde formularios simples.
 - Separar resultado, fuentes y revision humana.
 - Usar una interfaz con tipografia grande, contraste alto y lectura en voz alta.
-- Explorar un modulo Radar BORA para informes diarios del Boletin Oficial argentino.
+- Explorar un modulo internacional de boletines oficiales, empezando por Radar BORA 🇦🇷.
 
 ## Para quien esta pensado
 
@@ -54,9 +54,13 @@ Ver [docs/ai-integration.md](docs/ai-integration.md).
 
 La landing incluye una subpagina para usuarios sin experiencia: [guia-ia.html](guia-ia.html).
 
-## Radar BORA
+## Radar internacional de boletines oficiales
 
-El repo incluye una propuesta documentada para `Radar BORA`, un modulo de monitor diario del Boletin Oficial de la Republica Argentina.
+El repo incluye una propuesta documentada para `Radar BORA 🇦🇷`, primera edicion de un modulo internacional de monitoreo de boletines oficiales.
+
+En español: `Radar BORA 🇦🇷 · Boletin Oficial de la Republica Argentina`.
+
+En ingles: `BORA 🇦🇷 Radar · Argentine Official Gazette`.
 
 La idea no es que la IA "lea todo" sin control. El flujo recomendado es:
 
@@ -67,6 +71,14 @@ La idea no es que la IA "lea todo" sin control. El flujo recomendado es:
 - exigir revision profesional antes de actuar.
 
 Tambien se documenta el punto economico: para ofrecerlo seriamente conviene suscripcion o BYOK, con limites de uso y presupuesto.
+
+Roadmap previsto:
+
+- Argentina: BORA 🇦🇷 como primera edicion.
+- España: BOE como proximo candidato.
+- Chile: Diario Oficial como proximo candidato.
+- Estados Unidos: Federal Register y fuentes oficiales relacionadas.
+- LatAm: incorporacion gradual de boletines y diarios oficiales nacionales.
 
 Ver [radar-bora.html](radar-bora.html) y [docs/bora-radar.md](docs/bora-radar.md).
 

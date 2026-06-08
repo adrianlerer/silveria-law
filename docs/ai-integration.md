@@ -83,9 +83,9 @@ La IA no debe inventar derecho. Una version seria deberia consultar fuentes sepa
 
 El resultado final debe mostrar que esta fundado, que falta y que requiere revision profesional.
 
-### 6. Radar BORA
+### 6. Radar BORA 🇦🇷 e internacional
 
-Radar BORA es un ejemplo de integracion donde la IA no debe ser la primera capa.
+Radar BORA 🇦🇷 es un ejemplo de integracion donde la IA no debe ser la primera capa. Tambien funciona como primera edicion de un modulo internacional de boletines oficiales.
 
 Flujo recomendado:
 
@@ -97,6 +97,12 @@ Flujo recomendado:
 6. Mantener revision profesional obligatoria.
 
 Una version comercial o institucional deberia incluir suscripcion, cupos de uso o BYOK. No se recomienda ofrecer IA ilimitada sin limite tecnico ni economico.
+
+Roadmap publico:
+
+- Argentina: BORA 🇦🇷, Boletin Oficial de la Republica Argentina.
+- Ingles: BORA 🇦🇷 Radar, Argentine Official Gazette.
+- Proximos candidatos: España, Chile, Estados Unidos y otros paises de LatAm.
 
 Ver tambien [bora-radar.md](bora-radar.md).
 

@@ -1,6 +1,13 @@
-# Radar BORA
+# Radar BORA 🇦🇷 e internacional
 
-Radar BORA es una propuesta de modulo para SilverIA Law orientada a monitorear el Boletin Oficial de la Republica Argentina y entregar informes diarios con enlaces oficiales.
+Radar BORA 🇦🇷 es una propuesta de modulo para SilverIA Law orientada a monitorear el Boletin Oficial de la Republica Argentina y entregar informes diarios con enlaces oficiales.
+
+Es tambien la primera edicion de un radar internacional de boletines y diarios oficiales.
+
+Denominacion publica:
+
+- Español: Radar BORA 🇦🇷 · Boletin Oficial de la Republica Argentina.
+- Ingles: BORA 🇦🇷 Radar · Argentine Official Gazette.
 
 ## Principio
 
@@ -24,6 +31,20 @@ Secciones iniciales:
 - Primera Seccion: legislacion y avisos oficiales.
 - Segunda Seccion: sociedades y avisos judiciales.
 - Tercera Seccion: contrataciones.
+
+## Roadmap internacional
+
+Argentina es el primer caso documentado. La arquitectura debe permitir sumar otras jurisdicciones por etapas, despues de revisar fuente oficial, estabilidad tecnica, permisos de uso, formato y costo de procesamiento.
+
+Candidatos:
+
+- Argentina 🇦🇷: BORA / Boletin Oficial de la Republica Argentina.
+- España 🇪🇸: BOE / Boletin Oficial del Estado.
+- Chile 🇨🇱: Diario Oficial de la Republica de Chile.
+- Estados Unidos 🇺🇸: Federal Register y fuentes oficiales relacionadas.
+- LatAm: boletines y diarios oficiales nacionales.
+
+No presentar una jurisdiccion como soportada hasta que exista captura, normalizacion, enlaces oficiales y verificacion basica.
 
 ## Flujo tecnico
 
@@ -94,7 +115,9 @@ Opciones:
 
 ## Texto honesto de producto
 
-Radar BORA genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
+Radar BORA 🇦🇷 genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
+
+BORA 🇦🇷 Radar generates a preliminary report from official publications and configured filters. It may use AI to summarize or classify, but it does not replace lawyer review and is not automated legal advice.
 
 ## No objetivos
 

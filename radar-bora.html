@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#173f35" />
     <meta
       name="description"
-      content="Instructivo de SilverIA Law para implementar Radar BORA, un monitor del Boletin Oficial argentino con IA segura, API keys protegidas y suscripcion sustentable."
+      content="Instructivo de SilverIA Law para implementar Radar BORA Argentina y un radar internacional de boletines oficiales con IA segura, API keys protegidas y suscripcion sustentable."
     />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Radar BORA - SilverIA Law</title>
+    <title>Radar BORA Argentina - SilverIA Law</title>
   </head>
   <body class="doc-page">
     <a class="skip-link" href="#main">Saltar al contenido principal</a>
@@ -26,7 +26,7 @@
         </div>
         <div>
           <strong>SilverIA Law</strong>
-          <span>Radar BORA</span>
+          <span>Radar BORA 🇦🇷</span>
         </div>
       </div>
       <a class="doc-link" href="./index.html">Volver a la app</a>
@@ -37,10 +37,13 @@
     <main id="main" class="doc-main">
       <section class="doc-hero">
         <div>
-          <p class="status-line">Boletin Oficial argentino</p>
-          <h1>Radar BORA: informe diario con enlaces oficiales y control humano</h1>
+          <p class="status-line">Modulo internacional · Argentina primero</p>
+          <h1>Radar BORA 🇦🇷: informe diario con enlaces oficiales y control humano</h1>
           <p>
-            Radar BORA es una propuesta de modulo para que abogados, estudios y Colegios de Abogados reciban un resumen diario del Boletin Oficial de la Republica Argentina sin revisar manualmente cada seccion.
+            Radar BORA 🇦🇷 es la primera edicion del modulo internacional de boletines oficiales de SilverIA Law. Permite pensar informes diarios del Boletin Oficial de la Republica Argentina sin revisar manualmente cada seccion.
+          </p>
+          <p lang="en">
+            BORA 🇦🇷 Radar is the first edition of SilverIA Law's international official gazette module: an accessible daily report for the Argentine Official Gazette, with official links, bounded AI and professional review.
           </p>
         </div>
         <aside class="doc-summary" aria-label="Resumen corto">
@@ -54,6 +57,17 @@
         </aside>
       </section>
 
+      <section class="doc-section doc-callout">
+        <h2>Edicion bilingue: español e ingles</h2>
+        <p>
+          El modulo debe consignar expresamente BORA 🇦🇷 como fuente argentina. En ingles se presenta como <strong>BORA 🇦🇷 / Argentine Official Gazette</strong>. Esta doble denominacion evita confusiones y permite que el proyecto sea entendido por colegios, estudios, universidades y contactos internacionales.
+        </p>
+        <div class="simple-flow bilingual-labels">
+          <div><strong>ES:</strong> Radar BORA 🇦🇷 · Boletin Oficial de la Republica Argentina.</div>
+          <div lang="en"><strong>EN:</strong> BORA 🇦🇷 Radar · Argentine Official Gazette.</div>
+        </div>
+      </section>
+
       <section class="doc-section warning-card">
         <h2>1. Estado actual</h2>
         <p>
@@ -61,9 +75,55 @@
         </p>
       </section>
 
+      <section class="doc-section">
+        <h2>2. Roadmap internacional</h2>
+        <p>
+          Argentina es el primer caso. El modulo esta pensado para sumar otros boletines y diarios oficiales por etapas, siempre conservando enlaces oficiales, filtros transparentes, IA acotada y revision profesional.
+        </p>
+        <table class="doc-table subscription-table">
+          <thead>
+            <tr>
+              <th>Pais o region</th>
+              <th>Fuente prevista</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Argentina 🇦🇷</td>
+              <td>BORA / Boletin Oficial de la Republica Argentina</td>
+              <td>Primera edicion documentada</td>
+            </tr>
+            <tr>
+              <td>España 🇪🇸</td>
+              <td>BOE / Boletin Oficial del Estado</td>
+              <td>Proximo candidato</td>
+            </tr>
+            <tr>
+              <td>Chile 🇨🇱</td>
+              <td>Diario Oficial de la Republica de Chile</td>
+              <td>Proximo candidato</td>
+            </tr>
+            <tr>
+              <td>Estados Unidos 🇺🇸</td>
+              <td>Federal Register y fuentes oficiales relacionadas</td>
+              <td>Exploracion tecnica</td>
+            </tr>
+            <tr>
+              <td>LatAm</td>
+              <td>Boletines y diarios oficiales nacionales</td>
+              <td>Incorporacion gradual</td>
+            </tr>
+          </tbody>
+        </table>
+        <p lang="en">
+          International roadmap: Argentina first, then Spain, Chile, the United States and other Latin American official gazettes, added progressively after technical and source review.
+        </p>
+      </section>
+
       <section class="doc-grid" aria-label="Flujo del Radar BORA">
         <article class="doc-section mode-card">
-          <h2>2. Captura diaria</h2>
+          <h2>3. Captura diaria</h2>
           <p>Un proceso programado consulta las secciones del BORA una vez por dia.</p>
           <ul>
             <li>Primera Seccion: legislacion y avisos oficiales.</li>
@@ -74,7 +134,7 @@
         </article>
 
         <article class="doc-section mode-card">
-          <h2>3. Filtro barato antes de IA</h2>
+          <h2>4. Filtro barato antes de IA</h2>
           <p>No conviene que la IA lea todo si primero puede filtrarse por reglas simples.</p>
           <ul>
             <li>Organismos: ARCA, BCRA, CNV, IGJ, ministerios.</li>
@@ -85,7 +145,7 @@
         </article>
 
         <article class="doc-section mode-card">
-          <h2>4. IA solo para valor agregado</h2>
+          <h2>5. IA solo para valor agregado</h2>
           <p>La IA debe trabajar sobre resultados ya filtrados.</p>
           <ul>
             <li>Resumen en lenguaje claro.</li>
@@ -96,7 +156,7 @@
         </article>
 
         <article class="doc-section mode-card">
-          <h2>5. Informe diario</h2>
+          <h2>6. Informe diario</h2>
           <p>El usuario recibe un informe breve y accionable.</p>
           <ul>
             <li>Email diario o panel web.</li>
@@ -108,7 +168,7 @@
       </section>
 
       <section class="doc-section">
-        <h2>6. Costo para quien ofrece el servicio</h2>
+        <h2>7. Costo para quien ofrece el servicio</h2>
         <p>
           El costo real depende de cantidad de usuarios, emails e IA usada. La regla economica es simple: capturar el BORA una sola vez por dia, filtrar con reglas baratas y usar IA solo sobre lo que quedo relevante.
         </p>
@@ -146,7 +206,7 @@
       </section>
 
       <section class="doc-section doc-callout">
-        <h2>7. Suscripcion recomendada</h2>
+        <h2>8. Suscripcion recomendada</h2>
         <p>
           Si el modulo se ofrece en serio, debe tener suscripcion o BYOK. No es sustentable prometer IA ilimitada gratis.
         </p>
@@ -184,7 +244,7 @@
       </section>
 
       <section class="doc-section warning-card">
-        <h2>8. Si usted usa ChatGPT: atencion</h2>
+        <h2>9. Si usted usa ChatGPT: atencion</h2>
         <p>
           Una suscripcion de ChatGPT no es lo mismo que una API key. Para que una aplicacion use modelos de OpenAI necesita una clave de la plataforma de desarrolladores y facturacion API separada.
         </p>
@@ -198,7 +258,7 @@
       </section>
 
       <section class="doc-section">
-        <h2>9. Como poner la API key sin exponerla</h2>
+        <h2>10. Como poner la API key sin exponerla</h2>
         <p>
           La clave debe quedar en el servidor o en variables de entorno del proveedor de hosting. Nunca debe quedar en HTML, CSS, JavaScript publico, GitHub, localStorage ni en una captura.
         </p>
@@ -212,7 +272,7 @@
       </section>
 
       <section class="doc-section">
-        <h2>10. Ejemplo de arquitectura segura</h2>
+        <h2>11. Ejemplo de arquitectura segura</h2>
         <pre class="code-block"><code>PWA SilverIA Law
   -> /api/radar-bora/informe
     -> autenticar usuario
@@ -224,17 +284,20 @@
       </section>
 
       <section class="doc-section">
-        <h2>11. Que debe decir el producto</h2>
+        <h2>12. Que debe decir el producto</h2>
         <p>
           Texto recomendado para evitar engaños:
         </p>
         <blockquote>
-          Radar BORA genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
+          Radar BORA 🇦🇷 genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
+        </blockquote>
+        <blockquote lang="en">
+          BORA 🇦🇷 Radar generates a preliminary report from official publications and configured filters. It may use AI to summarize or classify, but it does not replace lawyer review and is not automated legal advice.
         </blockquote>
       </section>
 
       <section class="doc-section">
-        <h2>12. Siguiente paso tecnico</h2>
+        <h2>13. Siguiente paso tecnico</h2>
         <ol>
           <li>Crear backend separado para el modulo Radar BORA.</li>
           <li>Agregar cron diario para capturar secciones del BORA.</li>
