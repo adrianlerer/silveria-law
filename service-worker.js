@@ -1,4 +1,4 @@
-const CACHE_NAME = "silveria-law-v4";
+const CACHE_NAME = "silveria-law-v5";
 const ASSETS = [
   "./",
   "./index.html",
