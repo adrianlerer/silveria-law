@@ -11,6 +11,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Preparar borradores desde formularios simples.
 - Separar resultado, fuentes y revision humana.
 - Usar una interfaz con tipografia grande, contraste alto y lectura en voz alta.
+- Enseñar IA legal por capas para abogados senior y sistemas normativos distintos.
 - Explorar un modulo internacional de boletines oficiales, empezando por Radar BORA 🇦🇷.
 
 ## Para quien esta pensado
@@ -53,6 +54,21 @@ Opciones recomendadas:
 Ver [docs/ai-integration.md](docs/ai-integration.md).
 
 La landing incluye una subpagina para usuarios sin experiencia: [guia-ia.html](guia-ia.html).
+
+## Alfabetizacion IA para abogados senior
+
+El repo incluye un modulo pedagogico propio para enseñar IA legal sin tecnicismos ni falsas promesas.
+
+La estructura recomendada es:
+
+- fundamentos;
+- uso practico;
+- deberes profesionales y regulacion;
+- gobernanza institucional.
+
+El modulo incluye semaforo de riesgo, rutina de verificacion, plantilla de prompt seguro y adaptacion por sistema normativo. No enseña reglas de un pais como universales: Argentina, España, Chile, Estados Unidos y LatAm requieren fuentes y deberes locales.
+
+Ver [aprendizaje-ia.html](aprendizaje-ia.html) y [docs/ai-literacy.md](docs/ai-literacy.md).
 
 ## Radar internacional de boletines oficiales
 
@@ -135,6 +151,7 @@ Ver [docs/accessibility.md](docs/accessibility.md).
 - Agregar dictado real con confirmacion visible.
 - Conectar fuentes normativas y jurisprudenciales abiertas.
 - Agregar modo capacitacion para talleres.
+- Ampliar alfabetizacion IA por jurisdiccion y colegio profesional.
 - Incorporar auditoria de accesibilidad automatizada.
 - Permitir instalaciones privadas para instituciones.
 

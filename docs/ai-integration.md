@@ -83,7 +83,22 @@ La IA no debe inventar derecho. Una version seria deberia consultar fuentes sepa
 
 El resultado final debe mostrar que esta fundado, que falta y que requiere revision profesional.
 
-### 6. Radar BORA 🇦🇷 e internacional
+### 6. Alfabetizacion IA previa
+
+Antes de conectar IA real, una institucion deberia enseñar el uso basico con una capa de alfabetizacion.
+
+El modulo recomendado de SilverIA Law cubre:
+
+- fundamentos de IA generativa;
+- uso practico con fuentes y jurisdiccion;
+- deberes profesionales locales;
+- semaforo de riesgo;
+- rutina de verificacion;
+- gobernanza institucional.
+
+Ver [ai-literacy.md](ai-literacy.md).
+
+### 7. Radar BORA 🇦🇷 e internacional
 
 Radar BORA 🇦🇷 es un ejemplo de integracion donde la IA no debe ser la primera capa. Tambien funciona como primera edicion de un modulo internacional de boletines oficiales.
 
