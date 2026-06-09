@@ -177,6 +177,12 @@ body.high-contrast {
   text-align: left;
 }
 
+.nav-item > span:last-child {
+  min-width: 0;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+}
+
 .nav-item:hover,
 .nav-item.is-active {
   background: var(--surface-2);
@@ -1044,17 +1050,18 @@ body.high-contrast .task-card.is-selected {
 
 .steps li {
   display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 12px;
-  align-items: center;
-  padding: 10px;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  min-height: 64px;
+  padding: 12px;
   border-radius: 8px;
   color: var(--muted);
 }
 
 .steps li > span:first-child {
-  width: 36px;
-  height: 36px;
+  width: 52px;
+  height: 52px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -1062,11 +1069,17 @@ body.high-contrast .task-card.is-selected {
   background: var(--surface);
   color: var(--ink);
   font-weight: 900;
+  line-height: 1;
+  flex: 0 0 auto;
 }
 
 .steps li > span:last-child {
-  min-width: 0;
-  line-height: 1.3;
+  min-width: 12ch;
+  align-self: center;
+  line-height: 1.25;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .steps li.is-current {
@@ -1446,8 +1459,10 @@ blockquote {
 
   .nav-item {
     min-height: 62px;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
     justify-content: flex-start;
+    align-items: center;
     padding: 9px 10px;
     text-align: left;
   }
@@ -1496,6 +1511,41 @@ blockquote {
 
   .layer-item {
     grid-template-columns: 1fr;
+  }
+
+  .guide-panel {
+    padding: 18px;
+  }
+
+  .steps {
+    gap: 12px;
+  }
+
+  .steps li {
+    grid-template-columns: 60px minmax(0, 1fr);
+    min-height: 78px;
+    padding: 14px;
+  }
+
+  .steps li > span:first-child {
+    width: 60px;
+    height: 60px;
+  }
+
+  .steps li > span:last-child {
+    min-width: 0;
+    font-size: 1rem;
+    line-height: 1.22;
+  }
+}
+
+@media (max-width: 380px) {
+  .steps li {
+    grid-template-columns: 1fr;
+  }
+
+  .steps li > span:last-child {
+    align-self: start;
   }
 }
 

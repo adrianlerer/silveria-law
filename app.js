@@ -680,6 +680,12 @@ let currentTask = "leer";
 let fontSize = "normal";
 let currentLanguage = localStorage.getItem("silveria-law-language") || "es";
 
+const fontSizeValues = {
+  normal: "18px",
+  large: "20px",
+  xlarge: "22px"
+};
+
 function t(key) {
   return (translations[currentLanguage] && translations[currentLanguage][key]) || translations.es[key] || key;
 }
@@ -870,12 +876,14 @@ document.querySelector("#help-btn").addEventListener("click", () => {
 document.querySelector("#font-plus").addEventListener("click", () => {
   fontSize = fontSize === "normal" ? "large" : "xlarge";
   shell.dataset.fontSize = fontSize;
+  document.documentElement.style.setProperty("--base-font", fontSizeValues[fontSize]);
   showToast(t("toastFontUp"));
 });
 
 document.querySelector("#font-minus").addEventListener("click", () => {
   fontSize = fontSize === "xlarge" ? "large" : "normal";
   shell.dataset.fontSize = fontSize;
+  document.documentElement.style.setProperty("--base-font", fontSizeValues[fontSize]);
   showToast(t("toastFontDown"));
 });
 
