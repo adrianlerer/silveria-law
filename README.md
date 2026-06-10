@@ -30,6 +30,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Fuentes visibles antes de exportar.
 - Arquitectura simple y auditable.
 - Cero dependencia de datos privados o credenciales.
+- Open source responsable, sin open-washing.
 
 ## Estado del proyecto
 
@@ -54,6 +55,30 @@ Opciones recomendadas:
 Ver [docs/ai-integration.md](docs/ai-integration.md).
 
 La landing incluye una subpagina para usuarios sin experiencia: [guia-ia.html](guia-ia.html).
+
+## Open source responsable
+
+SilverIA Law es open source como software, documentacion y recurso comunitario de accesibilidad legal. No afirma ser un modelo de IA abierto.
+
+Esta abierto:
+
+- codigo fuente de la PWA;
+- interfaz accesible y patrones de UX;
+- documentacion;
+- guias educativas;
+- modulos pedagogicos;
+- patrones comunitarios como Radar BORA.
+
+No se publica:
+
+- API keys o credenciales;
+- datos reales de clientes, expedientes o usuarios;
+- prompts internos;
+- ruteos, umbrales, scoring, ledgers o evaluaciones propietarias;
+- modelos, pesos o datasets como si fueran propios;
+- estrategia reservada de JustitIA, IntegridAI, CriptoIUS, Lawve u otros verticales.
+
+Ver [open-source.html](open-source.html), [docs/open-source-policy.md](docs/open-source-policy.md) y [docs/lawve-skills-publication.md](docs/lawve-skills-publication.md).
 
 ## Alfabetizacion IA para abogados senior
 

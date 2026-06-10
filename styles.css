@@ -514,7 +514,8 @@ h1 {
 .founder-section,
 .movement-section,
 .bora-section,
-.literacy-section {
+.literacy-section,
+.open-source-section {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -617,6 +618,13 @@ h1 {
   border-color: rgba(176, 139, 63, 0.45);
   background:
     linear-gradient(135deg, rgba(176, 139, 63, 0.11), transparent 42%),
+    var(--surface);
+}
+
+.open-source-section {
+  border-color: rgba(23, 63, 53, 0.36);
+  background:
+    linear-gradient(135deg, rgba(23, 63, 53, 0.08), transparent 44%),
     var(--surface);
 }
 
