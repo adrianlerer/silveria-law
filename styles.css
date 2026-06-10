@@ -289,8 +289,8 @@ h1 {
 }
 
 .hero-actions {
-  display: grid;
-  grid-template-columns: minmax(230px, 260px) repeat(3, minmax(112px, 126px));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
   padding-bottom: 18px;
@@ -305,7 +305,7 @@ h1 {
 }
 
 .hero-actions .primary-btn {
-  min-width: min(100%, 260px);
+  flex: 1 1 240px;
   min-height: 68px;
   padding-inline: 28px;
   font-size: 1.18rem;
@@ -313,6 +313,7 @@ h1 {
 }
 
 .hero-actions .secondary-btn {
+  flex: 1 1 112px;
   min-height: 54px;
   min-width: 116px;
 }
@@ -1514,7 +1515,41 @@ blockquote {
 
   .doc-table {
     display: block;
-    overflow-x: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .doc-table thead {
+    display: none;
+  }
+
+  .doc-table tbody,
+  .doc-table tr,
+  .doc-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .doc-table tr {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  .doc-table td {
+    border: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .doc-table td:first-child {
+    background: var(--surface-2);
+    font-weight: 800;
+  }
+
+  .doc-table td:last-child {
+    border-bottom: 0;
   }
 
   .layer-item {

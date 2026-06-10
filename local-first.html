@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f35" />
+    <meta
+      name="description"
+      content="Hoja de ruta local-first de SilverIA Law: asuntos separados, citas verificables, redlines revisables y explicacion clara de proveedores IA."
+    />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Workspace local-first - SilverIA Law</title>
+  </head>
+  <body class="doc-page">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <header class="doc-header">
+      <div class="doc-brand" aria-label="SilverIA Law">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M12 11h18c5 0 9 4 9 9v17H21c-5 0-9-4-9-9V11Z" />
+            <path d="M20 18h12M20 24h10M20 30h7" />
+          </svg>
+        </div>
+        <div>
+          <strong>SilverIA Law</strong>
+          <span>Workspace local-first</span>
+        </div>
+      </div>
+      <a class="doc-link" href="./index.html">Volver a la app</a>
+      <a class="doc-link" href="./open-source.html">Open source</a>
+      <a class="doc-link" href="https://github.com/adrianlerer/silveria-law" rel="noopener noreferrer">Repositorio GitHub</a>
+    </header>
+
+    <main id="main" class="doc-main">
+      <section class="doc-hero">
+        <div>
+          <p class="status-line">Roadmap · privacidad · revision profesional</p>
+          <h1>Workspace legal local-first</h1>
+          <p>
+            Esta hoja de ruta define como podria evolucionar SilverIA Law hacia una mesa de trabajo por asunto: documentos separados, indice privado, respuestas con cita verificable y cambios revisables en Word.
+          </p>
+          <p lang="en">
+            This roadmap describes how SilverIA Law may evolve into a matter-based workspace: separated documents, private indexes, source-cited answers and reviewable Word redlines.
+          </p>
+        </div>
+        <aside class="doc-summary" aria-label="Resumen corto">
+          <h2>Regla corta</h2>
+          <ul>
+            <li>Un asunto, un espacio.</li>
+            <li>Citas antes de confianza.</li>
+            <li>Redlines antes que texto suelto.</li>
+            <li>Proveedor IA explicado.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="doc-section doc-callout">
+        <h2>1. Estado actual</h2>
+        <p>
+          La PWA publica actual es una demo educativa y accesible. No procesa documentos reales, no llama modelos de IA y no guarda expedientes. Esta pagina es una hoja de ruta tecnica y comunitaria, no una promesa de capacidad ya disponible.
+        </p>
+      </section>
+
+      <section class="doc-section">
+        <h2>2. Patron adoptado</h2>
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Patron</th>
+              <th>Uso previsto</th>
+              <th>Control minimo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Asunto separado</td>
+              <td>Cada cliente o expediente vive en un espacio propio.</td>
+              <td>No mezclar documentos, indices ni conversaciones.</td>
+            </tr>
+            <tr>
+              <td>Indice local por asunto</td>
+              <td>Buscar dentro de documentos sin crear un repositorio global innecesario.</td>
+              <td>Reindexar si el documento cambia.</td>
+            </tr>
+            <tr>
+              <td>Citas verificables</td>
+              <td>Responder con fragmento, documento, seccion y fecha cuando aplique.</td>
+              <td>Bloquear confianza si la fuente no aparece.</td>
+            </tr>
+            <tr>
+              <td>Redline revisable</td>
+              <td>Proponer cambios en formato que el abogado pueda aceptar o rechazar.</td>
+              <td>No modificar el documento final sin aprobacion humana.</td>
+            </tr>
+            <tr>
+              <td>Proveedor transparente</td>
+              <td>Explicar si se usa IA local, BYOK, nube institucional o demo sin IA.</td>
+              <td>Decir claramente que texto sale de la maquina y hacia donde.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>3. Que datos salen de la maquina</h2>
+        <p>
+          La respuesta honesta depende del modo de uso. Si la institucion usa un proveedor cloud, los fragmentos incluidos en el prompt pueden viajar a ese proveedor. Si usa modelos locales u on-prem, el flujo puede mantenerse dentro de la infraestructura propia.
+        </p>
+        <ul>
+          <li>Demo sin IA: no salen documentos ni prompts.</li>
+          <li>BYOK cloud: salen los fragmentos enviados al proveedor elegido.</li>
+          <li>Backend institucional: salen datos segun politica tecnica de la institucion.</li>
+          <li>Modelo local/on-prem: puede evitarse salida externa si ingestion e inferencia son locales.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>4. Como se vera para abogados senior</h2>
+        <ul>
+          <li>Boton grande: crear asunto.</li>
+          <li>Subir o dictar documentos con confirmacion visible.</li>
+          <li>Ver resumen con fuente, no una respuesta aislada.</li>
+          <li>Marcar incertidumbre como pendiente, no esconderla en una nota chica.</li>
+          <li>Exportar solo despues de revisar fuentes y cambios.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>5. Frontera open source</h2>
+        <p>
+          Este patron puede publicarse como arquitectura educativa. No autoriza publicar prompts internos, routing, thresholds, scoring, ledgers, datos reales, clientes ni estrategia de productos privados.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -13,6 +13,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Usar una interfaz con tipografia grande, contraste alto y lectura en voz alta.
 - Enseñar IA legal por capas para abogados senior y sistemas normativos distintos.
 - Explorar un modulo internacional de boletines oficiales, empezando por Radar BORA 🇦🇷.
+- Mostrar una hoja de ruta local-first para asuntos, citas verificables y redlines revisables.
 
 ## Para quien esta pensado
 
@@ -79,6 +80,14 @@ No se publica:
 - estrategia reservada de JustitIA, IntegridAI, CriptoIUS, Lawve u otros verticales.
 
 Ver [open-source.html](open-source.html), [docs/open-source-policy.md](docs/open-source-policy.md) y [docs/lawve-skills-publication.md](docs/lawve-skills-publication.md).
+
+## Workspace legal local-first
+
+SilverIA Law adopta como hoja de ruta publica un patron local-first: cada asunto deberia tener documentos, indice, conversacion, cambios propuestos y exportaciones separados. La respuesta no debe quedar como texto suelto: debe mostrar fuente verificable, estado de incertidumbre y, cuando haya edicion documental, cambios revisables antes de cualquier uso profesional.
+
+Esto no significa que la demo publica ya procese documentos reales. La version actual sigue siendo estatica y educativa. El patron sirve para orientar contribuciones, pilotos institucionales y futuras implementaciones privadas o comunitarias.
+
+Ver [local-first.html](local-first.html) y [docs/local-first-legal-workspace.md](docs/local-first-legal-workspace.md).
 
 ## Alfabetizacion IA para abogados senior
 
@@ -173,6 +182,9 @@ Ver [docs/accessibility.md](docs/accessibility.md).
 ## Roadmap sugerido
 
 - Integrar OCR para PDF escaneado.
+- Crear workspace local-first por asunto.
+- Agregar indice privado por asunto y citas verificables.
+- Incorporar redlines revisables para documentos Word.
 - Agregar dictado real con confirmacion visible.
 - Conectar fuentes normativas y jurisprudenciales abiertas.
 - Agregar modo capacitacion para talleres.
