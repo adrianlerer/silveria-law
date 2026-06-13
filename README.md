@@ -14,6 +14,7 @@ El objetivo no es reemplazar el criterio profesional. El objetivo es ofrecer una
 - Enseñar IA legal por capas para abogados senior y sistemas normativos distintos.
 - Explorar un modulo internacional de boletines oficiales, empezando por Radar BORA 🇦🇷.
 - Mostrar una hoja de ruta local-first para asuntos, citas verificables y redlines revisables.
+- Incorporar el patron de fuentes vivas: catalogo, frescura, health checks y resumen IA separado de fuente oficial.
 
 ## Para quien esta pensado
 
@@ -69,6 +70,7 @@ Esta abierto:
 - guias educativas;
 - modulos pedagogicos;
 - patrones comunitarios como Radar BORA.
+- patron de fuentes vivas: catalogo, frescura, health checks y estados de confianza.
 
 No se publica:
 
@@ -88,6 +90,14 @@ SilverIA Law adopta como hoja de ruta publica un patron local-first: cada asunto
 Esto no significa que la demo publica ya procese documentos reales. La version actual sigue siendo estatica y educativa. El patron sirve para orientar contribuciones, pilotos institucionales y futuras implementaciones privadas o comunitarias.
 
 Ver [local-first.html](local-first.html) y [docs/local-first-legal-workspace.md](docs/local-first-legal-workspace.md).
+
+## Fuentes vivas
+
+SilverIA Law incorpora como patron publico una capa de fuentes vivas inspirada en arquitecturas open source de monitoreo legislativo y regulatorio argentino: catalogo central de fuentes, ingesta normalizada, freshness SLO, health por fuente, resumen IA opt-in y estados de confianza.
+
+La regla es simple: si la fuente oficial no esta visible, esta atrasada o no responde, el resultado no debe tratarse como verificado.
+
+Ver [fuentes-vivas.html](fuentes-vivas.html) y [docs/fuentes-vivas.md](docs/fuentes-vivas.md).
 
 ## Alfabetizacion IA para abogados senior
 
@@ -189,6 +199,7 @@ Ver [docs/accessibility.md](docs/accessibility.md).
 - Conectar fuentes normativas y jurisprudenciales abiertas.
 - Agregar modo capacitacion para talleres.
 - Ampliar alfabetizacion IA por jurisdiccion y colegio profesional.
+- Agregar catalogo de fuentes vivas con freshness SLO y estados de confianza.
 - Incorporar auditoria de accesibilidad automatizada.
 - Permitir instalaciones privadas para instituciones.
 

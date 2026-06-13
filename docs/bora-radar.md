@@ -51,6 +51,7 @@ No presentar una jurisdiccion como soportada hasta que exista captura, normaliza
 ```text
 cron diario
   -> descargar portada/secciones BORA
+  -> registrar health/frescura de fuente
   -> extraer fecha, seccion, rubro, titulo, organismo y URL
   -> deduplicar por fecha + seccion + id/link
   -> aplicar perfiles de interes
@@ -118,6 +119,19 @@ Opciones:
 Radar BORA 🇦🇷 genera un informe preliminar a partir de publicaciones oficiales y filtros configurados. Puede usar IA para resumir o clasificar, pero no reemplaza la revision del abogado ni constituye asesoramiento juridico automatizado.
 
 BORA 🇦🇷 Radar generates a preliminary report from official publications and configured filters. It may use AI to summarize or classify, but it does not replace lawyer review and is not automated legal advice.
+
+## Fuente viva y frescura
+
+Cada fuente del radar debe informar:
+
+- ultima corrida;
+- ultimo estado;
+- fecha maxima detectada;
+- estado `VERIFICADO`, `STALE` o `NO VERIFICADO`;
+- enlace oficial por item;
+- motivo de falta de frescura cuando aplique.
+
+Si BORA u otra fuente esta `STALE`, el digest no debe presentarse como completo.
 
 ## No objetivos
 

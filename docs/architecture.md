@@ -34,6 +34,7 @@ Cualquier backend futuro deberia separar:
 - OCR;
 - indice privado y reconstruible por asunto;
 - recuperacion de fuentes;
+- catalogo de fuentes vivas con health y frescura;
 - verificacion de citas contra el documento vigente;
 - generacion de borradores;
 - redlines revisables antes de modificar documentos;
@@ -47,3 +48,9 @@ La capa de UI no deberia depender de un unico proveedor de IA.
 Ver [local-first-legal-workspace.md](local-first-legal-workspace.md).
 
 El patron se incorpora como hoja de ruta publica, no como implementacion ya disponible en la demo estatica. La regla central es que cada asunto debe aislar documentos, indice, conversacion, cambios propuestos y exportaciones. Si se conecta IA, la app debe explicar si el texto queda local, viaja a un proveedor BYOK/cloud o se procesa en infraestructura institucional.
+
+## Patron fuentes vivas
+
+Ver [fuentes-vivas.md](fuentes-vivas.md).
+
+El patron agrega una capa anterior al modelo: fuente oficial, ingesta, normalizacion, frescura, health y estados de confianza. La IA puede resumir o clasificar, pero el resultado debe conservar fuente, fecha de consulta y estado de verificacion.

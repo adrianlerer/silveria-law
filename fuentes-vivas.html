@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f35" />
+    <meta
+      name="description"
+      content="Fuentes vivas para SilverIA Law: catalogo de fuentes, frescura, health checks, resumen IA acotado y revision profesional."
+    />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fuentes vivas - SilverIA Law</title>
+  </head>
+  <body class="doc-page">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <header class="doc-header">
+      <div class="doc-brand" aria-label="SilverIA Law">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M12 11h18c5 0 9 4 9 9v17H21c-5 0-9-4-9-9V11Z" />
+            <path d="M20 18h12M20 24h10M20 30h7" />
+          </svg>
+        </div>
+        <div>
+          <strong>SilverIA Law</strong>
+          <span>Fuentes vivas</span>
+        </div>
+      </div>
+      <a class="doc-link" href="./index.html">Volver a la app</a>
+      <a class="doc-link" href="./radar-bora.html">Radar BORA</a>
+      <a class="doc-link" href="./local-first.html">Local-first</a>
+    </header>
+
+    <main id="main" class="doc-main">
+      <section class="doc-hero">
+        <div>
+          <p class="status-line">Fuentes oficiales · frescura · control de omisiones</p>
+          <h1>Fuentes vivas para IA legal argentina</h1>
+          <p>
+            La leccion mas util de proyectos como Vigia/OpenArg es que una herramienta legal seria no empieza por el modelo: empieza por un catalogo de fuentes, controles de frescura y una separacion clara entre dato oficial, resumen IA e inferencia profesional.
+          </p>
+          <p lang="en">
+            The useful pattern is not another model wrapper. It is a live-source layer: source catalog, freshness checks, bounded AI summaries and professional review before reliance.
+          </p>
+        </div>
+        <aside class="doc-summary" aria-label="Resumen corto">
+          <h2>Regla corta</h2>
+          <ul>
+            <li>Fuente antes que resumen.</li>
+            <li>Frescura antes que confianza.</li>
+            <li>IA opt-in y acotada.</li>
+            <li>Revision humana obligatoria.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="doc-section doc-callout">
+        <h2>1. Que se adopta</h2>
+        <p>
+          SilverIA Law adopta el patron, no el codigo ni la marca: fuentes oficiales monitoreadas, estado de salud por fuente, alertas de atraso, resumen IA separado del texto oficial y control profesional antes de actuar.
+        </p>
+      </section>
+
+      <section class="doc-section">
+        <h2>2. Patron de fuente viva</h2>
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Capa</th>
+              <th>Funcion</th>
+              <th>Control minimo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Catalogo</td>
+              <td>Definir fuente, URL base, tipo, jurisdiccion y cadencia esperada.</td>
+              <td>No consultar fuentes anonimas o no trazables.</td>
+            </tr>
+            <tr>
+              <td>Ingesta</td>
+              <td>Capturar datos publicos una vez y reutilizar cache normalizada.</td>
+              <td>Idempotencia y registro de ultima corrida.</td>
+            </tr>
+            <tr>
+              <td>Frescura</td>
+              <td>Marcar si una fuente esta atrasada respecto de su SLO.</td>
+              <td>Si esta stale, el output queda NO VERIFICADO.</td>
+            </tr>
+            <tr>
+              <td>Resumen IA</td>
+              <td>Explicar en lenguaje claro que hace una norma.</td>
+              <td>Separar resumen IA del texto oficial y mostrar fuente.</td>
+            </tr>
+            <tr>
+              <td>Alertas</td>
+              <td>Enviar novedades por keyword, sector o entidad vigilada.</td>
+              <td>Evitar alertas sin enlace, fecha y fuente.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section warning-card">
+        <h2>3. Estados de confianza</h2>
+        <ul>
+          <li><strong>VERIFICADO:</strong> fuente oficial disponible, fecha visible y dato coincidente.</li>
+          <li><strong>STALE:</strong> fuente atrasada; no asumir que no hubo cambios.</li>
+          <li><strong>NO VERIFICADO:</strong> fuente caida, incompleta o sin enlace suficiente.</li>
+          <li><strong>INFERIDO:</strong> lectura razonada a partir de fuentes, pendiente de revision.</li>
+          <li><strong>URGENTE:</strong> posible plazo, vencimiento o carga profesional.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>4. Aplicacion por producto</h2>
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Uso publico o privado</th>
+              <th>Adopcion recomendada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SilverIA Law</td>
+              <td>Publico</td>
+              <td>Educacion, accesibilidad, Radar BORA y explicacion clara de fuentes vivas.</td>
+            </tr>
+            <tr>
+              <td>JustitIA</td>
+              <td>Privado</td>
+              <td>Fuente/frescura como precondicion de analisis y exportacion.</td>
+            </tr>
+            <tr>
+              <td>IntegridAI</td>
+              <td>Privado</td>
+              <td>Monitoreo regulatorio, health de fuentes y alertas de compliance.</td>
+            </tr>
+            <tr>
+              <td>CriptoIUS</td>
+              <td>Privado</td>
+              <td>Provenance, estado de fuente y transiciones verificables antes del registro.</td>
+            </tr>
+            <tr>
+              <td>Lawve</td>
+              <td>Mixto</td>
+              <td>Skills publicas de checklist; skills privadas para routing, scoring y umbrales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section">
+        <h2>5. Frontera publica/privada</h2>
+        <p>
+          Publicamos el patron: catalogo, frescura, health, estados de confianza y control de omisiones. No publicamos prompts internos, scoring, routing, thresholds, ledgers, clientes, corpus privados ni estrategia propietaria.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

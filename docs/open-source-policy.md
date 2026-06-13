@@ -18,6 +18,7 @@ No afirma ser:
 - Modulos pedagogicos para abogados senior.
 - Patrones comunitarios como Radar BORA y radar internacional de boletines oficiales.
 - Hoja de ruta local-first para asuntos, citas verificables y redlines revisables.
+- Patron de fuentes vivas: catalogo, frescura, health y estados de confianza.
 
 ## Que no se publica
 
@@ -61,3 +62,9 @@ Las contribuciones deben mantener la frontera publica/privada:
 SilverIA Law puede publicar patrones generales de workspace legal local-first: asuntos separados, indices reconstruibles, citas verificables, redlines revisables y explicacion clara de proveedores IA.
 
 No debe publicar mecanicas privadas de productos cerrados, prompts, routing, thresholds, scoring, ledgers, clientes, documentos reales ni estrategia propietaria.
+
+## Regla fuentes vivas
+
+SilverIA Law puede publicar el patron general de fuente viva: catalogo, URL oficial, cadencia esperada, ultima consulta, health, freshness SLO, estados de confianza y control de omisiones.
+
+No debe publicar scoring propietario de relevancia, rutas internas de modelo, umbrales privados, datos de clientes, corpus reservados ni costos internos.
